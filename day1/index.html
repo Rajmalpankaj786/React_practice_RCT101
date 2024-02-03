@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #root{
+        margin: 180px auto;
+        text-align: center;
+        height: 200px;
+        width: 400px;
+        padding-top: 30px;
+        background-color: rgb(10, 10, 10);
+    }
+    h1,h2{
+         color: rgba(22, 219, 11, 0.906);
+    }
+</style>
+<body>
+    <div id="root"></div>
+    
+</body>
+</html>
+<script id="./without_React.js">
+function tick() {
+  document.getElementById('root').innerHTML = "";
+  const elem1 = document.createElement('h1')
+  elem1.textContent = 'Hello, world!'
+  const elem2 = document.createElement('h2')
+  elem2.textContent = new Date().toLocaleTimeString()
+  document.getElementById('root').append(elem1,elem2)
+}
+
+setInterval(tick, 1000);
+
+setInterval(func,1000); </script>
